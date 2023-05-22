@@ -1,0 +1,166 @@
+html {
+    font-size: 80%;
+}
+
+main {
+	display: grid;
+	grid-template-areas:
+	"main-filter main-header"
+	"main-content  main-content";
+	grid-template-rows: 32px 1fr;
+	grid-template-columns: 200px 1fr;
+}
+
+.ps-orange {
+	background-color: #f7931e;
+}
+
+.ps-green {
+	background-color: #00a79d;
+}
+
+.ps-text-orange {
+	color: #f7931e;
+}
+
+.ps-text-green {
+	color: #00a79d;
+}
+
+#header-logo {
+	max-width: 164px;
+}
+
+.dropdown-menu {
+  min-width: 2rem;
+}
+
+#main-header {
+	grid-area: main-header;
+}
+
+#main-content {
+	grid-area: main-content;
+}
+
+#brand-list {
+	grid-area: main-filter;
+}
+
+#zoekVeld {
+	width: 65px;
+}
+
+#zoekVeld:focus {
+	outline: none;
+}
+
+::placeholder {
+  color: #bbb;
+}
+
+.product-card img {
+	max-height: 200px;
+/*	width: auto;*/
+	object-fit: contain;
+}
+
+#tile-view .card {
+	width: 275px;
+}
+
+#list-view input {
+	width: 50px
+}
+
+.list-image {
+	max-height: 30px;
+	object-fit: contain;
+}
+
+@media only screen and (min-width: 360px) {
+	#zoekVeld {
+		width: 75px;
+	}
+}
+
+@media only screen and (min-width: 448px) {
+	#zoekVeld {
+		width: 100px;
+	}
+
+	#header-logo {
+		max-width: 246px;
+	}
+}
+
+@media only screen and (min-width: 500px) {
+	#tile-view .card {
+		width: 222px;
+	}
+}
+
+@media only screen and (min-width: 575px) {
+	html {
+	    font-size: 100%;
+	}
+
+	main {
+		grid-template-rows: 40px 1fr;
+	}
+
+	#zoekVeld {
+		width: 120px;
+	}
+
+	#header-logo {
+		max-width: 246px;
+	}
+
+	#tile-view .card {
+		width: 245px;
+	}
+}
+
+@media only screen and (min-width: 767px) {
+	#header-logo {
+		max-width: 273px;
+	}
+
+	#zoekVeld {
+		width: 140px;
+	}
+
+	#tile-view .card {
+		width: 220px;
+	}
+}
+
+@media only screen and (min-width: 991px) {
+	main {
+		grid-template-areas:
+		"main-header main-header"
+		"main-filter  main-content";
+		grid-template-rows: 36px 1fr;
+	}
+
+	#zoekVeld {
+		width: 160px;
+	}
+
+	#tile-view .card {
+			width: 232px;
+		}
+}
+
+@media only screen and (min-width: 1199px) {
+	#tile-view .card {
+			width: 270px;
+		}
+}
+
+@media only screen and (min-width: 1399px) {
+	#tile-view .card {
+		width: 260px;
+	}
+}

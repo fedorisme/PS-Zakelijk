@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Phoneshop Zakelijk</title>
+  </head>
+  <body>
+    <header>
+      
+      <div class="bg-primary container-fluid">
+        <div class="container pb-1 d-flex align-items-center justify-content-between">
+          
+          <picture>
+            <source media="(max-width: 767px)" srcset="images/phoneshopdark-narrow.png">
+            <source media="(min-width: 768px)" srcset="images/phoneshopdark-solo.png">
+            <img id="header-logo" src="images/phoneshopdark.png" alt="Phoneshop logo">
+          </picture>
+
+          <div class="d-flex align-items-center">
+            <div class="bg-white my-2 px-2 rounded-pill">
+              <input type="text" name="zoekVeld" id="zoekVeld" class="border-0" placeholder="Zoek (Model/SKU/Art.nr.)">
+              <button class="btn border-0 px-1" type="button"><i class="bi bi-search"></i></button>
+            </div>
+            <div class="ms-2 d-flex flex-column flex-sm-row">
+              <div class="pt-1"><a href="#"><i class="bi bi-person text-white h2 nudge"></i></a></div>
+              <div class="ms-sm-2"><a href="#"><i class="bi bi-cart4 text-white h2"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-primary d-none d-md-block">
+        <div class="container d-flex justify-content-evenly">
+          <img src="images/phoneshopdark-sub-1.png" alt="Telefonisch bereikbaar op werkdagen tot 18:00">
+          <img src="images/phoneshopdark-sub-2.png" alt="Op werkdagen besteld voor 18:00 morgen in huis">
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" aria-current="page" href="#">Telefoons</a>
+              <a class="nav-item nav-link" href="#">Assecoires</a>
+              <a class="nav-item nav-link" href="#">Contact</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              NL/EN
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">NL</a></li>
+              <li><a class="dropdown-item" href="#">EN</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+
+      <div id="brand-list">
+        <nav class="navbar navbar-expand-lg p-1">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#merk-filter" aria-controls="merk-filter" aria-expanded="false" aria-label="Toggle filter">
+            <i class="bi bi-chevron-down"></i><span>Merk filter</span>
+          </button>
+          <div class="collapse navbar-collapse z-2" id="merk-filter">
+            <div class="navbar-nav flex-column">
+              <h6 class="nav-item mb-0">Telefoons</h6>
+              <a class="nav-item nav-link p-1" href="#">Apple iPad</a>
+              <a class="nav-item nav-link p-1" href="#">Apple iPhone</a>
+              <a class="nav-item nav-link p-1" href="#">Beyerdynamic</a>
+              <a class="nav-item nav-link p-1" href="#">BlackView</a>
+              <a class="nav-item nav-link p-1" href="#">Bose</a>
+              <a class="nav-item nav-link p-1" href="#">Caterpillar</a>
+              <a class="nav-item nav-link p-1" href="#">Fairphone</a>
+              <a class="nav-item nav-link p-1" href="#">Google</a>
+              <a class="nav-item nav-link p-1" href="#">Huawei</a>
+              <a class="nav-item nav-link p-1" href="#">JBL</a>
+              <a class="nav-item nav-link p-1" href="#">Motorola</a>
+              <a class="nav-item nav-link p-1" href="#">Nokia</a>
+              <a class="nav-item nav-link p-1" href="#">OnePlus</a>
+              <a class="nav-item nav-link p-1" href="#">Oppo</a>
+              <a class="nav-item nav-link p-1" href="#">Samsung</a>
+              <a class="nav-item nav-link p-1" href="#">Sony</a>
+              <a class="nav-item nav-link p-1" href="#">Xiaomi</a>
+
+              <h6 class="nav-item mb-0 mt-2">Accessoires</h6>
+              <a class="nav-item nav-link p-1" href="#">Accu</a>
+              <a class="nav-item nav-link p-1" href="#">Autohouder</a>
+              <a class="nav-item nav-link p-1" href="#">Bescherm Hoesje</a>
+              <a class="nav-item nav-link p-1" href="#">Carkit</a>
+              <a class="nav-item nav-link p-1" href="#">Computer</a>
+              <a class="nav-item nav-link p-1" href="#">Data-Kabels</a>
+              <a class="nav-item nav-link p-1" href="#">Dockingstations</a>
+              <a class="nav-item nav-link p-1" href="#">Draadloos Laden</a>
+              <a class="nav-item nav-link p-1" href="#">Gadgets</a>
+              <a class="nav-item nav-link p-1" href="#">Geheugenkaarten</a>
+              <a class="nav-item nav-link p-1" href="#">Headset</a>
+              <a class="nav-item nav-link p-1" href="#">Keyboard Case</a>
+              <a class="nav-item nav-link p-1" href="#">Laders</a>
+              <a class="nav-item nav-link p-1" href="#">Network Products</a>
+              <a class="nav-item nav-link p-1" href="#">Otterbox</a>
+              <a class="nav-item nav-link p-1" href="#">Powerbank</a>
+              <a class="nav-item nav-link p-1" href="#">Prepaid Start</a>
+              <a class="nav-item nav-link p-1" href="#">Reparatie</a>
+              <a class="nav-item nav-link p-1" href="#">Screen Protector</a>
+              <a class="nav-item nav-link p-1" href="#">Stylus</a>
+              <a class="nav-item nav-link p-1" href="#">TV</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <div id="main-header" class="pt-1 pt-lg-0 text-end">
+        <a data-bs-toggle="collapse" href=".multi-collapse" role="button" aria-expanded="false" aria-controls="list-view tile-view"><i id="list-toggle" class="bi bi-grid me-3 text-primary h3"></i></a>
+      </div>
+      
+      <div id="main-content" class="flex-fill d-flex flex-column">
+        <div id="list-view" class="collapse multi-collapse show flex-fill">
+          <ul class="list-group">
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+              <img class="list-image me-2" src="images/phone1.png" alt="Foto telefoon">
+              <div class="flex-fill d-flex flex-column flex-xl-row flex-wrap">
+                <h6 class="mb-0">Apple iPad Pro 12.9 2022 WiFi 512GB Silver</h6>
+                <div class="d-flex">
+                  <div class="ms-xl-3">SKU: MM6U3NF/A</div>
+                  <p class="mb-0 ms-3">Voorraad <span>> 25</span></p>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <div class="h5 mb-0">1965,70</div>
+                <div class="d-flex align-items-center">
+                  <input class="mx-1" type="number">
+                  <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-cart4"></i></button>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+              <img class="list-image me-2" src="images/phone2.png" alt="Foto telefoon">
+              <div class="flex-fill d-flex flex-column flex-xl-row flex-wrap">
+                <h6 class="mb-0">Nokia 105 Neo 2019 Dual Sim Black</h6>
+                <div class="d-flex">
+                  <div class="ms-xl-3">SKU: MM6U3NF/A</div>
+                  <p class="mb-0 ms-3">Voorraad <span>> 25</span></p>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <div class="h5 mb-0">1965,00</div>
+                <div class="d-flex align-items-center">
+                  <input class="mx-1" type="number">
+                  <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-cart4"></i></button>
+                </div>
+              </div>
+            </li>
+            
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+              <img class="list-image me-2" src="images/phone3.png" alt="Foto telefoon">
+              <div class="flex-fill d-flex flex-column flex-xl-row flex-wrap">
+                <h6 class="mb-0">Apple iPad Air 2022 10.9 WiFi + 5G 64GB Space Grey</h6>
+                <div class="d-flex">
+                  <div class="ms-xl-3">SKU: MM25235NF/A</div>
+                  <p class="mb-0 ms-3">Voorraad <span>> 25</span></p>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <div class="h5 mb-0">565,70</div>
+                <div class="d-flex align-items-center">
+                  <input class="mx-1" type="number">
+                  <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-cart4"></i></button>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+              <img class="list-image me-2" src="images/phone1.png" alt="Foto telefoon">
+              <div class="flex-fill d-flex flex-column flex-xl-row flex-wrap">
+                <h6 class="mb-0">OnePlus Nord CE 2 5G Dual Sim 8/128GB Mirror Gray</h6>
+                <div class="d-flex">
+                  <div class="ms-xl-3">SKU: 4535345/A</div>
+                  <p class="mb-0 ms-3">Voorraad <span>> 25</span></p>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <div class="h5 mb-0">965,70</div>
+                <div class="d-flex align-items-center">
+                  <input class="mx-1" type="number">
+                  <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-cart4"></i></button>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+              <img class="list-image me-2" src="images/phone2.png" alt="Foto telefoon">
+              <div class="flex-fill d-flex flex-column flex-xl-row flex-wrap">
+                <h6 class="mb-0">Caterpillar CAT S42H+ Dual Sim 32GB Black</h6>
+                <div class="d-flex">
+                  <div class="ms-xl-3">SKU: MM6U3NF/A</div>
+                  <p class="mb-0 ms-3">Voorraad <span>> 25</span></p>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <div class="h5 mb-0">1965,70</div>
+                <div class="d-flex align-items-center">
+                  <input class="mx-1" type="number">
+                  <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-cart4"></i></button>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item d-flex align-items-center justify-content-between">
+              <img class="list-image me-2" src="images/phone1.png" alt="Foto telefoon">
+              <div class="flex-fill d-flex flex-column flex-xl-row flex-wrap">
+                <h6 class="mb-0">Fairphone 4 6/128GB Grey</h6>
+                <div class="d-flex">
+                  <div class="ms-xl-3">SKU: MM6U3NF/A</div>
+                  <p class="mb-0 ms-3">Voorraad <span>> 25</span></p>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <div class="h5 mb-0">1965,70</div>
+                <div class="d-flex align-items-center">
+                  <input class="mx-1" type="number">
+                  <button type="button" class="btn btn-primary btn-sm"><i class="bi bi-cart4"></i></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="tile-view" class="collapse multi-collapse flex-fill">
+          <div class="d-flex flex-fill justify-content-center justify-content-sm-start flex-wrap">
+
+            <article class="product-card card ms-1 mb-1 mt-2 me-2">
+              <img class="card-img" src="images/phone1.png" alt="Foto telefoon">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Apple iPhone 12 Pro - 1TB</h5>
+                <p class="card-text lh-sm flex-fill">Met deze telefoon kan je bellen, niet dat iemand dat nog doet. Laten we wel wijzen je gaat porno kijken en spelletjes spelen.</p>
+                <a href="#" class="card-link h5 text-decoration-none text-end d-block">1965,70</a>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center">
+                <p class="mb-0">Voorraad <span>> 25</span></p>
+                <button type="button" class="btn btn-primary btn-sm">BESTEL</button>
+              </div> 
+            </article>
+
+            <article class="product-card card ms-1 mb-1 mt-2 me-2">
+              <img class="card-img" src="images/phone2.png" alt="Foto telefoon">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Apple iPhone 13 Pro - 1TB - Sierra blue</h5>
+                <p class="card-text lh-sm flex-fill">Deze telefoon is ideaal als jij je partner wil negeren</p>
+                <a href="#" class="card-link h5 text-decoration-none text-end d-block">1965,70</a>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center">
+                <p class="mb-0">Voorraad <span>> 25</span></p>
+                <button type="button" class="btn btn-primary btn-sm">BESTEL</button>
+              </div> 
+            </article>
+
+            <article class="product-card card ms-1 mb-1 mt-2 me-2">
+              <img class="card-img" src="images/phone3.png" alt="Foto telefoon">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Apple iPhone 13 Pro - 1TB - Sierra blue</h5>
+                <p class="card-text lh-sm flex-fill">Deze telefoon is ideaal voor tijdens het kakken te browsen.</p>
+                <a href="#" class="card-link h5 text-decoration-none text-end d-block">1965,70</a>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center">
+                <p class="mb-0">Voorraad <span>> 25</span></p>
+                <button type="button" class="btn btn-primary btn-sm">BESTEL</button>
+              </div> 
+            </article>
+
+            <article class="product-card card ms-1 mb-1 mt-2 me-2">
+              <img class="card-img" src="images/phone2.png" alt="Foto telefoon">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">HTC U12+ 64GB</h5>
+                <p class="card-text lh-sm flex-fill">Deze telefoon heeft een wat langere beschrijving. Niet dat hij meer te bieden heeft maar meer text is meer betalen. Dus lappen.</p>
+                <a href="#" class="card-link h5 text-decoration-none text-end d-block">1965,70</a>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center">
+                <p class="mb-0">Voorraad <span>> 25</span></p>
+                <button type="button" class="btn btn-primary btn-sm">BESTEL</button>
+              </div> 
+            </article>
+
+            <article class="product-card card ms-1 mb-1 mt-2 me-2">
+              <img class="card-img" src="images/phone1.png" alt="Foto telefoon">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Apple iPhone 13 Pro - 1TB - Sierra blue</h5>
+                <p class="card-text lh-sm flex-fill">Deze telefoon is ideaal als jij je partner wil negeren</p>
+                <a href="#" class="card-link h5 text-decoration-none text-end d-block">1965,70</a>
+              </div>
+              <div class="card-footer d-flex justify-content-between align-items-center">
+                <p class="mb-0">Voorraad <span>> 25</span></p>
+                <button type="button" class="btn btn-primary btn-sm">BESTEL</button>
+              </div> 
+            </article>
+          </div>
+        </div>
+
+        <div class="">
+          <nav aria-label="Card Navigation">
+            <ul class="pagination pagination-sm m-1 justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link" href="#"
+                   tabindex="-1" aria-disabled="true">Previous
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-light p-3 border-top">
+      <p class="text-center mb-0"><small>&copy; 2009-2023 - Alle vermelden prijzen zijn exclusief BTW - <a href="http://www.phoneshop.nl/voorwaarden" target="blank" >Algemene voorwaarden</a>
+      <br>Phoneshop Zakelijk - Elbe 25 - 2491 BT Den Haag - tel. +31(0)70-427.62.62 - KvK nr. 27149566 - BTW nr. NL 805.653.193 B01<br>
+      Ingelogd als Peter Vossen Inc.</small></p>
+    </footer>
+
+  </body>
+</html>

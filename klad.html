@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>BS5 Klad</title>
+  </head>
+  <body>
+    <header>
+      <div class="bg-primary container-fluid">
+        <div class="container d-flex">
+          <h2>Page Title</h2>
+          <div class="bg-white my-2 px-2 rounded-pill">
+            <input type="text" name="zoekVeld" id="zoekVeld" class="border-0" placeholder="Zoek (Model/SKU/Art.nr.)">
+            <button class="btn" type="button"><i class="bi bi-search"></i></button>
+          </div>
+          <i class="bi bi-cart4 text-white h2"></i>
+          <h2>Taal / Login</h2>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-xl bg-secondary navbar-dark">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" aria-current="page" href="#">Telefoons</a>
+              <a class="nav-item nav-link" href="#">Assecoires</a>
+              <a class="nav-item nav-link" href="#">Contact</a>
+            </div>
+          </div>
+          <a href="#" class="navbar-brand ms-auto align-self-start">Taal keuze</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Card grid</h1>
+      <div class="row row-cols-3 row-cols-lg-4 g-2">
+        <div class="bg-info col">Boxje</div>
+        <div class="bg-info col">Boxje</div>
+        <div class="bg-info col">Boxje</div>
+        <div class="bg-info col">Boxje</div>
+        <div class="bg-info col">Boxje</div>
+        <div class="bg-info col">Boxje</div>
+        <div class="bg-info col">Boxje</div>
+        <div class="bg-info col">Boxje</div>
+      </div>
+      <button type="button" class="btn btn-primary btn-sm">Order</button>
+
+      <h1 class="container mt-4">Cards</h1>
+
+      <h4 class="text-secondary">pagination-sm</h4>
+
+      <nav aria-label="Robot Navigation">
+        <ul class="pagination pagination-sm">
+          <li class="page-item disabled">
+            <a class="page-link" href="#"
+               tabindex="-1" aria-disabled="true">Previous
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+
+      <hr>
+
+      <p>card-group zorgt dat ze even hoog zijn</p>
+
+      <div class="card" style="width: 400px">
+        <div class="card-header">Custom Printed Mug</div>
+        <img class="card-img" src="https://pixelprowess.com/i/mug-rex.jpg" alt="Oscar">
+        <div class="card-body">
+          <h5 class="card-title">Rex</h5>
+          <h5 class="card-subtitle">Mayor of Binaryville</h5>
+          <p class="card-text lh-sm">A well-loved personality in town. He rose to robotdom from a microprocessor plant on the south side of town, where many famous and influential robots before him were conceived.</p>
+          <a href="#" class="card-link">more info</a>
+        </div>
+        <div class="card-footer">Now on sale</div> 
+      </div>
+
+      <h4>List groups voor telefoon lijst</h4>
+      <div class="list-group">
+        <button class="list-group-item list-group-item-action">Kan button zijn</button>
+        <a class="list-group-item list-group-item-action list-group-item-secondary">Kan anker zijn</a>
+        <a class="list-group-item list-group-item-action">Je kan ook wat met kleur al shier boven</a>
+        <button class="list-group-item list-group-item-action">Flipping pancakes</button>
+        <button class="list-group-item list-group-item-action">Packing suitcases</button>
+      </div>
+
+      <h4>For a FAQ can use an accordion</h4>
+
+      <hr>
+
+      <h4>Colapse om the schakelen tussen list en thumbnails</h4>
+
+      <div class="d-flex">
+        <div>
+          <a data-bs-toggle="collapse" href=".multi-collapse" role="button" aria-expanded="false" aria-controls="productsExample">
+            href</a>
+        </div>  
+        <div class="ms-3">
+          <button class="btn btn-info text-white"
+            type="button"
+            data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="expertsExample productsExample">
+            data-bs-target
+          </button>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="collapse multi-collapse" id="productsExample">
+        <strong>Mind Numbing Products</strong> is a force in the manufacturing and production market. Our motto is If it’s not Mind Numbing, it’s not worth it.
+      </div>
+
+      <div class="collapse multi-collapse show" id="expertsExample">
+        As experts in lifting, moving, and nuts-and-bolting, the robotic population is an ideal match for industry and repetitive tasks.
+      </div>
+
+      <hr>
+
+      <h4>Keep in mind there are alert options in BS. Might be usefull</h4>
+
+      <h4 class="text-secondary">badge voor aantal in stock misschien</h4>
+      <div class="fs-5">Bubbles <span class="badge bg-primary">1</span></div>
+
+      <h4>Make the card a stretched link</h4>
+    </main>
+  </body>
+</html>
