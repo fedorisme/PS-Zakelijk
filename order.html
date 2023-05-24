@@ -33,7 +33,7 @@
             </div>
             <div class="ms-2 d-flex flex-column flex-sm-row">
               <div class="pt-1"><a href="#"><i class="bi bi-person text-white h2 nudge"></i></a></div>
-              <div class="ms-sm-2"><a href="#"><i class="bi bi-cart4 text-white h2"></i></a></div>
+              <div class="ms-sm-2"><a href="order.html"><i class="bi bi-cart4 text-white h2"></i></a></div>
             </div>
           </div>
         </div>
@@ -53,8 +53,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active" aria-current="page" href="#">Telefoons</a>
-              <a class="nav-item nav-link" href="#">Assecoires</a>
+              <a class="nav-item nav-link active" aria-current="page" href="index.html">Telefoons</a>
+              <a class="nav-item nav-link" href="index.html">Assecoires</a>
               <a class="nav-item nav-link" href="#">Contact</a>
             </div>
           </div>
@@ -75,11 +75,11 @@
 
     <main class="container mb-2">
 
-      <h1>Bestelling afronden</h1>
+      <h1 class="h3 mt-2">Bestelling afronden</h1>
 
       <div class="d-flex flex-column flex-lg-row-reverse">
         <div id="shopping-basket" class="flex-grow-1 bg-light p-2">
-          <h2>Winkelmandje</h2>
+          <h2 class="h4">Winkelmandje</h2>
 
           <table class="table table-striped">
             <thead>
@@ -125,192 +125,192 @@
         </div>
 
         <div class="flex-grow-1 pe-1">
-          <h2>Adresgegevens</h2>
+          <h2 class="h4">Adresgegevens</h2>
 
-      <form action="/action_page.php">
-        <div>
-          <label class="order-label my-1" for="fname">(Bedrijfs)naam</label>
-          <input class="order-input" type="text" id="fname" name="fname">
-        </div>
-        <div>
-          <label class="order-label my-1" for="ftelefoon">Telefoon</label>
-          <input class="order-input" type="text" id="ftelefoon" name="ftelefoon">
-        </div>
-        <div>
-          <label class="order-label my-1" for="fkvk">KvK nummer</label>
-          <input class="order-input" type="text" id="fkvk" name="fkvk">
-        </div>
-        <div>
-          <label class="order-label my-1" for="fbtwid">BTW ID</label>
-          <input class="order-input" type="text" id="fbtwid" name="fbtwid">
-        </div>
-        <div class="d-flex">
-          <p class="order-label mb-1">Betaalwijze</p>
-          <div class="ps-1">
-            <input class="me-2" type="radio" id="ideal" value="ideal" name="betaalwijze"><label for="ideal">iDEAL</label>
-              <select name="ideal_bank" id="ideal_bank">
-                <option value="ABNANL2A">ABN AMRO</option>
-                <option value="ASNBNL21">ASN Bank</option>
-                <option value="BUNQNL2A">bunq</option>
-                <option value="INGBNL2A">ING</option>
-                <option value="KNABNL2H">Knab</option>
-                <option value="RABONL2U">Rabobank</option>
-                <option value="RBRBNL21">Regiobank</option>
-                <option value="REVOLT21">Revolut</option>
-                <option value="SNSBNL2A">SNS Bank</option>
-                <option value="TRIONL2U">Triodos</option>
-                <option value="FVLBNL22">Van Lanschot</option>
-                <option value="BITSNL2A">Yoursafe</option>
-              </select><br>
-            <input class="me-2" type="radio" id="overmaken" value="overmaken" name="betaalwijze"><label for="overmaken">Overmaken</label><br>
-            <input class="me-2" type="radio" id="rekening" value="rekening" name="betaalwijze"><label for="rekening">Op rekening (betaling 8 dagen) (Limiet: € 19 657,04)</label><br>
-            <input class="me-2" type="radio" id="rembours" value="rembours" name="betaalwijze"><label for="rembours">Rembours</label><br>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="d-flex">
-          <label class="order-label" for="Factuuradres">Factuuradres</label>
-          <div class="flex-fill">
-            <div class="d-flex justify-content-between flex-wrap-reverse">
-              <select name="Factuuradres" id="Factuuradres" class="order-adres-list mb-2">
-                <option value="67">AfzenderAdres (AfzenderPlaats)</option>
-                <option value="20">Peter Vossen INC (Plaats)</option>
-                <option value="57">Phoneshop Zakelijk BV (Den Haag)</option>
-                <option value="66">Testklant (TestPlaats)</option>
-                <option value="1">Phoneshop Zakelijk BV (Den Haag)</option>
-                <option value="6747"> (Den Haag)</option>
-                <option value="8541"> (Den Haag)</option>
-                <option value="8769">test (test)</option>
-              </select>
-              <button type="button" class="btn btn-primary btn-sm mb-2" title="Factuuradres" data-bs-toggle="modal" data-bs-target="#adresModal">Open adresboek / Zoek adres</button>
+          <form action="/action_page.php">
+            <div>
+              <label class="order-label my-1" for="fname">(Bedrijfs)naam</label>
+              <input class="order-input" type="text" id="fname" name="fname">
             </div>
-            <p id="Factuuradres_adres">AfzenderAdres<br>Afzenderstraat&nbsp;1<br>1234AB&nbsp;AfzenderPlaats<br>Nedeland</p>      
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="d-flex">
-          <label class="order-label" for="Verzendadres">Verzendadres</label>
-          <div class="flex-fill">
-            <div class="d-flex justify-content-between flex-wrap-reverse">
-              <select name="Verzendadres" id="Verzendadres" class="order-adres-list mb-2">
-                <option value="67">AfzenderAdres (AfzenderPlaats)</option>
-                <option value="20">Peter Vossen INC (Plaats)</option>
-                <option value="57">Phoneshop Zakelijk BV (Den Haag)</option>
-                <option value="66">Testklant (TestPlaats)</option>
-                <option value="1">Phoneshop Zakelijk BV (Den Haag)</option>
-                <option value="6747"> (Den Haag)</option>
-                <option value="8541"> (Den Haag)</option>
-                <option value="8769">test (test)</option>
-              </select>
-              <button type="button" class="btn btn-primary btn-sm mb-2" title="Verzendadres" >Open adresboek / Zoek adres</button>
+            <div>
+              <label class="order-label my-1" for="ftelefoon">Telefoon</label>
+              <input class="order-input" type="text" id="ftelefoon" name="ftelefoon">
             </div>
-            <input type="checkbox" id="Verzendadres_afhalen" name="Verzendadres_afhalen" value="1">
-            <label for="Verzendadres_afhalen">&nbsp;Ik wil mijn bestelling afhalen</label>   
-            <p id="Verzendadres_adres">Testklant<br>T.a.v. T. Klant<br>Straatnaam&nbsp;1<br>1234AB&nbsp;TestPlaats<br>Nedeland</p>
-          </div>
-        </div>
-
-        <hr>
-
-        <div class="d-flex">
-          <label class="order-label" for="Afzender">Afzender</label>
-          <div class="flex-fill">
-            <div class="d-flex justify-content-between flex-wrap-reverse">
-              <select name="Afzender" id="Afzender" class="order-adres-list mb-2">
-                <option value="67">AfzenderAdres (AfzenderPlaats)</option>
-                <option value="20">Peter Vossen INC (Plaats)</option>
-                <option value="57">Phoneshop Zakelijk BV (Den Haag)</option>
-                <option value="66">Testklant (TestPlaats)</option>
-                <option value="1">Phoneshop Zakelijk BV (Den Haag)</option>
-                <option value="6747"> (Den Haag)</option>
-                <option value="8541"> (Den Haag)</option>
-                <option value="8769">test (test)</option>
-              </select>
-              <button type="button" class="btn btn-primary btn-sm mb-2" title="Afzender" >Open adresboek / Zoek adres</button>
+            <div>
+              <label class="order-label my-1" for="fkvk">KvK nummer</label>
+              <input class="order-input" type="text" id="fkvk" name="fkvk">
             </div>
-            <p id="Afzender_adres">Peter Vossen INC<br>T.a.v. Petertje<br>Straat&nbsp;123<br>1234AB&nbsp;Plaats<br>Nederland</p>
-            <p><small>(Selecteer uw eigen adres voor dropshipment)</small></p>
+            <div>
+              <label class="order-label my-1" for="fbtwid">BTW ID</label>
+              <input class="order-input" type="text" id="fbtwid" name="fbtwid">
+            </div>
+            <div class="d-flex">
+              <p class="order-label mb-1">Betaalwijze</p>
+              <div class="ps-1">
+                <input class="me-2" type="radio" id="ideal" value="ideal" name="betaalwijze"><label for="ideal">iDEAL</label>
+                  <select name="ideal_bank" id="ideal_bank">
+                    <option value="ABNANL2A">ABN AMRO</option>
+                    <option value="ASNBNL21">ASN Bank</option>
+                    <option value="BUNQNL2A">bunq</option>
+                    <option value="INGBNL2A">ING</option>
+                    <option value="KNABNL2H">Knab</option>
+                    <option value="RABONL2U">Rabobank</option>
+                    <option value="RBRBNL21">Regiobank</option>
+                    <option value="REVOLT21">Revolut</option>
+                    <option value="SNSBNL2A">SNS Bank</option>
+                    <option value="TRIONL2U">Triodos</option>
+                    <option value="FVLBNL22">Van Lanschot</option>
+                    <option value="BITSNL2A">Yoursafe</option>
+                  </select><br>
+                <input class="me-2" type="radio" id="overmaken" value="overmaken" name="betaalwijze"><label for="overmaken">Overmaken</label><br>
+                <input class="me-2" type="radio" id="rekening" value="rekening" name="betaalwijze"><label for="rekening">Op rekening (betaling 8 dagen) (Limiet: € 19 657,04)</label><br>
+                <input class="me-2" type="radio" id="rembours" value="rembours" name="betaalwijze"><label for="rembours">Rembours</label><br>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="d-flex">
+              <label class="order-label" for="Factuuradres">Factuuradres</label>
+              <div class="flex-fill">
+                <div class="d-flex justify-content-between flex-wrap-reverse">
+                  <select name="Factuuradres" id="Factuuradres" class="order-adres-list mb-2">
+                    <option value="67">AfzenderAdres (AfzenderPlaats)</option>
+                    <option value="20">Peter Vossen INC (Plaats)</option>
+                    <option value="57">Phoneshop Zakelijk BV (Den Haag)</option>
+                    <option value="66">Testklant (TestPlaats)</option>
+                    <option value="1">Phoneshop Zakelijk BV (Den Haag)</option>
+                    <option value="6747"> (Den Haag)</option>
+                    <option value="8541"> (Den Haag)</option>
+                    <option value="8769">test (test)</option>
+                  </select>
+                  <button type="button" class="btn btn-primary btn-sm mb-2" title="Factuuradres" data-bs-toggle="modal" data-bs-target="#adresModal">Open adresboek / Zoek adres</button>
+                </div>
+                <p id="Factuuradres_adres">AfzenderAdres<br>Afzenderstraat&nbsp;1<br>1234AB&nbsp;AfzenderPlaats<br>Nedeland</p>      
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="d-flex">
+              <label class="order-label" for="Verzendadres">Verzendadres</label>
+              <div class="flex-fill">
+                <div class="d-flex justify-content-between flex-wrap-reverse">
+                  <select name="Verzendadres" id="Verzendadres" class="order-adres-list mb-2">
+                    <option value="67">AfzenderAdres (AfzenderPlaats)</option>
+                    <option value="20">Peter Vossen INC (Plaats)</option>
+                    <option value="57">Phoneshop Zakelijk BV (Den Haag)</option>
+                    <option value="66">Testklant (TestPlaats)</option>
+                    <option value="1">Phoneshop Zakelijk BV (Den Haag)</option>
+                    <option value="6747"> (Den Haag)</option>
+                    <option value="8541"> (Den Haag)</option>
+                    <option value="8769">test (test)</option>
+                  </select>
+                  <button type="button" class="btn btn-primary btn-sm mb-2" title="Verzendadres" data-bs-toggle="modal" data-bs-target="#adresModal">Open adresboek / Zoek adres</button>
+                </div>
+                <input type="checkbox" id="Verzendadres_afhalen" name="Verzendadres_afhalen" value="1">
+                <label for="Verzendadres_afhalen">&nbsp;Ik wil mijn bestelling afhalen</label>   
+                <p id="Verzendadres_adres">Testklant<br>T.a.v. T. Klant<br>Straatnaam&nbsp;1<br>1234AB&nbsp;TestPlaats<br>Nedeland</p>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="d-flex">
+              <label class="order-label" for="Afzender">Afzender</label>
+              <div class="flex-fill">
+                <div class="d-flex justify-content-between flex-wrap-reverse">
+                  <select name="Afzender" id="Afzender" class="order-adres-list mb-2">
+                    <option value="67">AfzenderAdres (AfzenderPlaats)</option>
+                    <option value="20">Peter Vossen INC (Plaats)</option>
+                    <option value="57">Phoneshop Zakelijk BV (Den Haag)</option>
+                    <option value="66">Testklant (TestPlaats)</option>
+                    <option value="1">Phoneshop Zakelijk BV (Den Haag)</option>
+                    <option value="6747"> (Den Haag)</option>
+                    <option value="8541"> (Den Haag)</option>
+                    <option value="8769">test (test)</option>
+                  </select>
+                  <button type="button" class="btn btn-primary btn-sm mb-2" title="Afzender" data-bs-toggle="modal" data-bs-target="#adresModal">Open adresboek / Zoek adres</button>
+                </div>
+                <p id="Afzender_adres">Peter Vossen INC<br>T.a.v. Petertje<br>Straat&nbsp;123<br>1234AB&nbsp;Plaats<br>Nederland</p>
+                <p><small>(Selecteer uw eigen adres voor dropshipment)</small></p>
+              </div>
+             </div>
+              
+            <hr>
+
+            <div class="d-flex justify-content-between">
+              <p>
+                <small>* Door te bestellen gaat u akkoord met de algemene voorwaarden van Phoneshop</small>
+              </p>
+              <button type="button" class="btn btn-primary d-block align-self-start ms-2" title="Afzender" >Bestel</button>    
+            </div>
+            
+          </form>
+
+        </div>
+      </div>
+
+      <!-- AdresModal -->
+      <div class="modal fade" id="adresModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5" id="exampleModalLabel">Adres Boek</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label class="mb-2 order-label" for="adres_select">Selecteer adres:</label>
+              <select class="mb-2" name="adres_select" id="adres_select">
+              <option value="0">Maak nieuw adres aan.</option>
+              <option value="1">Phoneshop Zakelijk BV (Den Haag)</option>
+              <option value="20">Peter Vossen INC (Plaats)</option>
+              <option value="57">Phoneshop Zakelijk BV (Den Haag)</option>
+              <option value="66">Testklant (TestPlaats)</option>
+              <option value="67">AfzenderAdres (AfzenderPlaats)</option>
+              <option value="6747"> (Den Haag)</option>
+              <option value="8541"> (Den Haag)</option>
+              <option value="8769">test (test)</option></select>
+
+              <label class="order-label mb-4" for="searchAdres">Zoek</label>
+              <input class="mb-4" type="text" placeholder="" id="searchAdres" name="searchAdres">
+
+              <div>
+                <label class="order-label my-1" for="fadresname">(Bedrijfs)naam</label>
+                <input class="order-input" type="text" id="fadresname" name="fadresname">
+              </div>  
+              <div>
+                <label class="order-label my-1" for="fadrestav">T.a.v.</label>
+                <input class="order-input" type="text" id="fadrestav" name="fadrestav">
+              </div>  
+              <div>
+                <label class="order-label my-1" for="fadresstraat">Straat</label>
+                <input class="order-input" type="text" id="fadresstraat" name="fadresstraat">
+              </div>  
+              <div>
+                <label class="order-label my-1" for="fadreshuisnummer">Huisnummer</label>
+                <input class="order-input" type="text" id="fadreshuisnummer" name="fadreshuisnummer">
+              </div>  
+              <div>
+                <label class="order-label my-1" for="fadrespostcode">Postcode</label>
+                <input class="order-input" type="text" id="fadrespostcode" name="fadrespostcode">
+              </div>  
+              <div>
+                <label class="order-label my-1" for="fadresplaats">Plaats</label>
+                <input class="order-input" type="text" id="fadresplaats" name="fadresplaats">
+              </div> 
+              <div>
+                <label class="order-label my-1" for="fadresland">Land</label>
+                <input class="order-input" type="text" id="fadresland" name="fadresland">
+              </div>   
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
-         </div>
-          
-        <hr>
-
-        <div class="d-flex justify-content-between">
-          <p>
-            <small>* Door te bestellen gaat u akkoord met de algemene voorwaarden van Phoneshop</small>
-          </p>
-          <button type="button" class="btn btn-primary d-block align-self-start ms-2" title="Afzender" >Bestel</button>    
-        </div>
-        
-      </form>
-
         </div>
       </div>
-
-<!-- AdresModal -->
-<div class="modal fade" id="adresModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title fs-5" id="exampleModalLabel">Adres Boek</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <label class="mb-2 order-label" for="adres_select">Selecteer adres:</label>
-        <select class="mb-2" name="adres_select" id="adres_select">
-        <option value="0">Maak nieuw adres aan.</option>
-        <option value="1">Phoneshop Zakelijk BV (Den Haag)</option>
-        <option value="20">Peter Vossen INC (Plaats)</option>
-        <option value="57">Phoneshop Zakelijk BV (Den Haag)</option>
-        <option value="66">Testklant (TestPlaats)</option>
-        <option value="67">AfzenderAdres (AfzenderPlaats)</option>
-        <option value="6747"> (Den Haag)</option>
-        <option value="8541"> (Den Haag)</option>
-        <option value="8769">test (test)</option></select>
-
-        <label class="order-label mb-4" for="searchAdres">Zoek</label>
-        <input class="mb-4" type="text" placeholder="" id="searchAdres" name="searchAdres">
-
-        <div>
-          <label class="order-label my-1" for="fadresname">(Bedrijfs)naam</label>
-          <input class="order-input" type="text" id="fadresname" name="fadresname">
-        </div>  
-        <div>
-          <label class="order-label my-1" for="fadrestav">T.a.v.</label>
-          <input class="order-input" type="text" id="fadrestav" name="fadrestav">
-        </div>  
-        <div>
-          <label class="order-label my-1" for="fadresstraat">Straat</label>
-          <input class="order-input" type="text" id="fadresstraat" name="fadresstraat">
-        </div>  
-        <div>
-          <label class="order-label my-1" for="fadreshuisnummer">Huisnummer</label>
-          <input class="order-input" type="text" id="fadreshuisnummer" name="fadreshuisnummer">
-        </div>  
-        <div>
-          <label class="order-label my-1" for="fadrespostcode">Postcode</label>
-          <input class="order-input" type="text" id="fadrespostcode" name="fadrespostcode">
-        </div>  
-        <div>
-          <label class="order-label my-1" for="fadresplaats">Plaats</label>
-          <input class="order-input" type="text" id="fadresplaats" name="fadresplaats">
-        </div> 
-        <div>
-          <label class="order-label my-1" for="fadresland">Land</label>
-          <input class="order-input" type="text" id="fadresland" name="fadresland">
-        </div>   
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
     </main>
 
