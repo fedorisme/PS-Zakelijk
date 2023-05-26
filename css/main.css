@@ -2,14 +2,15 @@ html {
     font-size: 80%;
 }
 
-#main-content {
+/*#main-content {
 	display: grid;
 	grid-template-areas:
-	"main-filter main-header"
+	"main-filter main-filter"
+	"main-header main-header"
 	"main-content  main-content";
 	grid-template-rows: 32px 1fr;
 	grid-template-columns: 200px 1fr;
-}
+}*/
 
 .ps-shadow {
 	box-shadow: 7px 7px 10px 2px rgba(0, 0, 0, 0.1);
@@ -23,12 +24,20 @@ html {
 	background-color: #00a79d;
 }
 
+.ps-darkgrey {
+	background-color: #484848;
+}
+
 .ps-text-orange {
 	color: #f7931e;
 }
 
 .ps-text-green {
 	color: #00a79d;
+}
+
+.ps-sku {
+	min-width: auto;
 }
 
 #header-logo {
@@ -39,16 +48,17 @@ html {
   min-width: 2rem;
 }
 
-#main-header {
+/*#main-header {
 	grid-area: main-header;
 }
 
 #main-content {
 	grid-area: main-content;
-}
+}*/
 
 #brand-list {
-	grid-area: main-filter;
+/*	grid-area: main-filter;*/
+	height: 32px;
 }
 
 #zoekVeld {
@@ -134,8 +144,12 @@ html {
 	    font-size: 100%;
 	}
 
-	#main-content {
+/*	#main-content {
 		grid-template-rows: 40px 1fr;
+	}*/
+
+	#brand-list {
+		height: 40px;
 	}
 
 	#zoekVeld {
@@ -149,6 +163,10 @@ html {
 	#tile-view .card {
 		width: 245px;
 	}
+
+	.ps-sku {
+		min-width: 150px;
+	}
 }
 
 @media only screen and (min-width: 767px) {
@@ -157,24 +175,34 @@ html {
 	}
 
 	#zoekVeld {
-		width: 140px;
+		width: 240px;
 	}
 
 	#tile-view .card {
 		width: 220px;
 	}
+
+	.ps-sku {
+		min-width: 170px;
+	}
 }
 
 @media only screen and (min-width: 991px) {
-	#main-content {
+/*	#main-content {
 		grid-template-areas:
-		"main-header main-header"
-		"main-filter  main-content";
+		"main-filter main-header"
+		"main-filter main-content"
+		"main-filter main-content";
 		grid-template-rows: 36px 1fr;
+	}*/
+
+	#brand-list {
+		width: 200px;
+		height: auto;
 	}
 
 	#zoekVeld {
-		width: 160px;
+		width: 300px;
 	}
 
 	#tile-view .card {
