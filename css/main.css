@@ -91,6 +91,10 @@ html {
 	width: 50px
 }
 
+#shoppingcartModal input {
+	width: 50px
+}
+
 .list-image {
 	max-height: 30px;
 	object-fit: contain;
@@ -215,6 +219,10 @@ html {
 
 	#shopping-basket {
 		max-width: 50%;
+		font-size: 0.8rem;
+	}
+
+	#shoppingcartModal table {
 		font-size: 0.8rem;
 	}
 }
