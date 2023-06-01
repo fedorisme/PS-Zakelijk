@@ -40,6 +40,14 @@ html {
 	min-width: auto;
 }
 
+.ps-product-amount {
+	width: 50px
+}
+
+.ps-product-bestel {
+	width: 300px;
+}
+
 #header-logo {
 	max-width: 164px;
 }
@@ -120,6 +128,19 @@ html {
 	width: 8rem;
 }
 
+#carouselProductContainer {
+	height: 432px;
+	width: 532px;
+}
+
+#carouselProductContainer img {
+	max-height: 400px;
+}
+
+#upsell .card {
+	width: 220px;
+	height: 220px;
+}
 
 @media only screen and (min-width: 360px) {
 	#zoekVeld {
