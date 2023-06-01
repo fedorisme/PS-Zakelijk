@@ -44,8 +44,8 @@ html {
 	width: 50px
 }
 
-.ps-product-bestel {
-	width: 300px;
+.ps-glow {
+	text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
 }
 
 #header-logo {
@@ -129,18 +129,20 @@ html {
 }
 
 #carouselProductContainer {
-	height: 432px;
-	width: 532px;
+	height: 222px;
+	width: 322px;
 }
 
 #carouselProductContainer img {
-	max-height: 400px;
+	max-height: 200px;
 }
 
 #upsell .card {
-	width: 220px;
-	height: 220px;
+	width: 164px;
+	height: 164px;
 }
+
+
 
 @media only screen and (min-width: 360px) {
 	#zoekVeld {
@@ -192,6 +194,24 @@ html {
 	.ps-sku {
 		min-width: 150px;
 	}
+
+	#carouselProductContainer {
+		height: 432px;
+		width: 532px;
+	}
+
+	#carouselProductContainer img {
+		max-height: 400px;
+	}
+
+	#ps-product-details th {
+		width: 300px;
+	}
+
+	#ps-product-details {
+		font-size: 0.8rem;
+	}
+	
 }
 
 @media only screen and (min-width: 767px) {
@@ -210,6 +230,15 @@ html {
 	.ps-sku {
 		min-width: 170px;
 	}
+
+	#upsell .card {
+		width: 220px;
+		height: 220px;
+	}
+
+	.ps-product-bestel {
+		width: 340px;
+	}	
 }
 
 @media only screen and (min-width: 991px) {
@@ -246,6 +275,10 @@ html {
 	#shoppingcartModal table {
 		font-size: 0.8rem;
 	}
+
+	.ps-product-bestel {
+		width: 440px;
+	}	
 }
 
 @media only screen and (min-width: 1199px) {
